@@ -1,0 +1,350 @@
+body {
+    font-family: Playfair Display;
+    text-align: center;
+    margin: 0;
+    background-image: linear-gradient(to right, #161663, #1ddbe9);
+    height: 100dvh;
+}
+
+/* -------------- HEADER SECTION ---------------- */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    background-image: linear-gradient(to top, #060c5d, #1ddbe9);
+    filter: drop-shadow(0 -30px 50px #060c5d);
+}
+
+.header h1 {
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: #fff;
+    filter: drop-shadow(0 0 40px #fff) drop-shadow(0 20px 10px #000);
+}
+
+.header h1::first-letter {
+    font-size: 100px;
+    text-decoration: underline;
+}
+
+.header img {
+    width: 300px;
+    filter: drop-shadow(0 0 20px #fff);
+}
+
+.header img:first-child {
+    transform: rotate(345deg);
+}
+
+.header img:last-child{
+    transform: rotate(20deg);
+}
+
+/* ------------ NAV SECTION ------------- */
+
+.conteiner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegador {
+    display: flex;
+    backdrop-filter: blur(5px);
+    width: 250px;
+    background-image: linear-gradient(to top, transparent, #aaa, 90%, transparent);
+    height: 500px;
+    position: sticky;
+    top: 100px;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.lista-navegador img{
+    width: 30px;
+}
+
+.lista-navegador {
+    list-style: none;
+}
+
+.lista-navegador a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.lista-navegador li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 10px;
+    transition: background-color .2s;
+    background-color: #ccc;
+}
+
+.lista-navegador li:hover {
+    background-color: #fff;
+    filter: drop-shadow(0 0 10px #fff);
+    transition: .5s;
+}
+
+/* -------------- MAIN SECTION ---------------- */
+
+.principal {
+    width: calc(100% - 250px);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.secion {
+    padding: 50px;
+    padding-top: 20px;
+    margin-top: 50px;
+    padding-bottom: 0;
+    border-radius: 50px;
+    text-align: justify;
+    background-color: #fffa;
+}
+
+.secion h2 {
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: -10px 0 10px #fff,-10px 0 10px #fff, -10px 0 10px #fff;
+}
+
+.secion h3 {
+    font-size: 30px;
+}
+
+.secion p {
+    line-height: 1.6;
+}
+
+.pastel-secion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px #fff;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.texto {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    padding: 20px;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.texto th, .texto td {
+    padding: 12px 20px;
+    width: 100px;
+    text-align: center;
+}
+
+.texto td {
+    border-bottom: 1px solid #333;
+    border-radius: 2px;
+}
+
+.tabla {
+    display: flex;
+    position: relative;
+}
+
+.tabla img[alt="img1"] {
+    position: absolute;
+    z-index: 1;
+    width: 325px;
+    height: 400px;
+    right: 400px;
+    top: -70px;
+}
+
+.tabla img[alt="img2"] {
+    position: absolute;
+    z-index: 1;
+    width: 325px;
+    height: 400px;
+    right: -250px;
+    top: -70px;
+    transform: rotate(180deg);
+}
+
+
+.pastel-secion button {
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: #333;
+    background-image: linear-gradient(to right, #000, #555);
+    margin-top: 20px;
+    transition:filter .2s ;
+}
+
+.pastel-secion button:hover {
+    filter: drop-shadow(0 0 10px #00f);
+    outline: 2px solid #fff;
+}
+
+.pastel-secion button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.secion-invertido {
+    flex-direction: row-reverse;
+}
+
+.tabla img[src="imganes/naranja.png"] {
+    width: 240px;
+    height: 350px;
+}
+
+.tabla img[src="imganes/naranja.png"]:first-child {
+    right: 420px;
+    top: -70px;
+}
+
+.tabla img[src="imganes/naranja.png"]:last-child {
+    right: -220px;
+    top: -70px;
+}
+
+/* ------------- FOOTER --------------- */
+
+footer {
+    background-image: radial-gradient(#000, transparent);
+    border-top: 1px solid #fff;
+    border-start-end-radius: 20px;
+    border-top-left-radius: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.formulario input {
+    width: 180px;
+}
+
+.formulario textarea {
+    max-width: 450px;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 30px;
+}
+
+.formulario input, .formulario textarea {
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    border-bottom:1px solid #000 ;
+}
+
+.formulario input:focus, .formulario textarea:focus {
+    outline: 2px solid #00f;
+}
+
+textarea {
+    font-family: sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: sans-serif;
+    color: #3337;
+}
+
+.formulario button {
+    width: fit-content;
+    padding: 12px 30px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    background-color: #48e;
+}
+
+.formulario button:hover {
+    outline: 2px solid #00f;
+    filter: drop-shadow(0 0 10px #00f) drop-shadow(0 0 5px #1ddbe9);
+}
+
+.email-asunto {
+    display: flex;
+    justify-content: space-between;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer img {
+    width: 50px;
+}
+
+.contactanos {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.contactanos h2 {
+    text-align: center;
+}
+
+.redes {
+    width: 400px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes a:hover {
+    filter: drop-shadow(0 0 10px #fff) ;
+}

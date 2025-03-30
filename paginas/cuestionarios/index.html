@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Iansui&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="/img/imagen-titulo.png" alt="pastel">
+        <h1>Sabor Celestial</h1>
+        <img src="/img/imagen-titulo.png" alt="pastel">
+    </header>
+
+    <div class="conteiner">
+
+        <nav class="navegador">
+            <ul class="lista-navegador">
+                <li class="portada">
+                    <a href="/index.html">
+                        <img src="/img/icon/pastel-de-cumpleanos.png" alt="portada">
+                        <span>Pasteles</span>
+                    </a>
+                </li>
+                <li class="recetas">
+                    <a href="/paginas/recetas/index.html">
+                        <img src="/img/icon/receta.png" alt="recetas">
+                        <span>Recetas</span>
+                    </a>
+                </li>
+                <li class="preguntas">
+                    <a href="/paginas/preguntas/index.html">
+                        <img src="/img/icon/pregunta.png" alt="preguntas">
+                        <span>Preguntas</span>
+                    </a>
+                </li>
+                <li class="cuestionario">
+                    <a href="index.html">
+                        <img src="/img/icon/cuestionario.png" alt="cuestionario">
+                        <span>Cuestionario</span>
+                    </a>
+                </li>
+                <li class="informacion">
+                    <a href="/paginas/informacion/index.html">
+                        <img src="/img/icon/informacion.png" alt="informacion">
+                        <span>Infotmacion</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="principal">
+            <section class="secion">
+                <h2>Cuestionario</h2>
+                <form class="formulario-main" action="index.html">
+                    <div class="lado-izquierdo">
+                        <div class="formulario_primera-parte">
+                            <label for="texto">Pon tu nombre
+                                <input id="texto" type="text">
+                            </label>
+                            <label for="email"> Pon tu email
+                                <input id="email" type="email">
+                            </label>
+                        </div>
+                        <label for="pasteles">Selecioan tu pastel faborito
+                        </label>
+                        <select name="pasteles" id="pasteles">
+                            <option value="Chocolate">Pastel de chocolate</option>
+                            <option value="fresa">Pastel de fresa</option>
+                            <option value="limon">Pastel de limon</option>
+                        </select>
+                        <div class="raya"></div>
+                        <div>
+                            <p>¿Cual pastel esta mas bueno?</p>
+                            <label for="chocolate">Pastel de chocolate:
+                                <input type="radio" id="chocolate" name="mas-bueno">
+                            </label>
+                            <label for="fresa">Pastel de fresa:
+                                <input type="radio" id="fresa" name="mas-bueno">
+                            </label>
+                            <label for="fresa">Pastel de limon:
+                                <input type="radio" id="limon" name="mas-bueno">
+                            </label>
+                            <label for="todos-buenos">Todos:
+                                <input type="radio" id="todos-buenos" name="mas-bueno">
+                            </label>
+                        </div>
+                        <div class="raya"></div>
+                        <div>
+                            <p>¿Cual te gusta menos?</p>
+                            <label for="chocolate2">Pastel de chocolate:
+                                <input type="radio" id="chocolate2" name="no-gusta">
+                            </label>
+                            <label for="fresa2">Pastel de fresa:
+                                <input type="radio" id="fresa2" name="no-gusta">
+                            </label>
+                            <label for="limon2">Pastel de limon:
+                                <input type="radio" id="limon2" name="no-gusta">
+                            </label>
+                            <label for="ninguno">ninguno:
+                                <input type="radio" id="ninguno" name="no-gusta">
+                            </label>
+                        </div>
+                        <div class="raya"></div>
+                        <div>
+                            <p>Eligue 2:</p>
+                            <label for="chocolate3">Pastel de chocolate:
+                                <input type="checkbox" id="chocolate3" name="elgue2">
+                            </label>
+                            <label for="fresa3">Pastel de fresa:
+                                <input type="checkbox" id="fresa3" name="eligue2">
+                            </label>
+                            <label for="limon3">Pastel de limon:
+                                <input type="checkbox" id="limon3" name="eligue2">
+                            </label>
+                            <label for="naranja">Naranja:
+                                <input type="checkbox" id="naranja" name="eligue2">
+                            </label>
+                        </div>
+                        <div class="raya"></div>
+                        <label for="comentario-mejora" class="comentario-mejora">Explica en que poriamos mejorar:
+                            <textarea id="comentario-mejora">
+                                
+                            </textarea>
+                        </label>
+                        <button>Enviar mi respuesta</button>
+                    </div>
+                    <div class="lado-derecho">
+                        <img src="imagenes/cake.jpg" alt="pastel1">
+                        <img src="imagenes/vanilla-cake.jpg" alt="pastel2">
+                        <img src="imagenes/pastel3.jpg" alt="pastel3">
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <form class="form-footer" action="index.html">
+            <h2>Pon tu Email y escribenos un comentario</h2>
+            <div class="formulario">
+                <div class="email-asunto">
+                    <label>
+                        Email:
+                        <input type="email" placeholder="ejemplo@gmail.com">
+                    </label>
+                    <label>
+                        Asunto:
+                        <input type="text" placeholder="Pastel">
+                    </label>
+                </div>
+                <label>
+                    Comentario:
+                    <textarea name="comentario" id="comentario" placeholder="Me gustaria preguntar..."></textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+        <div class="contactanos">
+            <h2>Contactanos</h2>
+            <div class="redes">
+                <a href="https://x.com/pastelesycogye">
+                    <img src="/img/icon/twitter.png" alt="twitter">
+                </a>
+
+                <a href="https://www.instagram.com/barcelonacakes/?hl=es">
+                    <img src="/img/icon/instagram.png" alt="Instagram">
+                </a>
+
+                <a href="https://www.facebook.com/groups/203054877719864/?locale=es_ES">
+                    <img src="/img/icon/facebook.png" alt="Facebook">
+                </a>
+
+                <a href="https://www.tiktok.com/discover/pasteles?lang=es">
+                    <img src="/img/icon/tiktok.png" alt="TikTok">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
