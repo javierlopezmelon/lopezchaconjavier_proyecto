@@ -45,6 +45,39 @@ body {
     transform: rotate(20deg);
 }
 
+
+@media (max-width: 1200px) {
+    .header img {
+        scale: .8;
+    }
+}
+
+@media (max-width: 880px) {
+    .header img {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .conteiner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista-navegador {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .navegador {
+        width: auto;
+        height: auto;
+        top: 0;
+    }
+}
+
 /* ------------ NAV SECTION ------------- */
 
 .conteiner {
@@ -96,6 +129,26 @@ body {
     background-color: #fff;
     filter: drop-shadow(0 0 10px #fff);
     transition: .5s;
+}
+
+@media (max-width: 800px) {
+    .conteiner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista-navegador {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .navegador {
+        width: auto;
+        height: auto;
+        top: 0;
+    }
 }
 
 /* -------------- MAIN SECTION ---------------- */
@@ -256,9 +309,15 @@ form {
     text-align: left;
 }
 
+form > h2 {
+    max-width: 500px;
+    text-align: center;
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 50px;
 }
 
@@ -268,7 +327,7 @@ form {
 
 .formulario textarea {
     max-width: 450px;
-    min-width: 100%;
+    min-width: 250px;
     max-height: 150px;
     min-height: 30px;
 }
@@ -310,6 +369,7 @@ input::placeholder, textarea::placeholder {
 .email-asunto {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 form label {
@@ -333,7 +393,7 @@ footer img {
 }
 
 .redes {
-    width: 400px;
+    max-width: 350px;
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
@@ -343,4 +403,22 @@ footer img {
 
 .redes a:hover {
     filter: drop-shadow(0 0 10px #fff) ;
+}
+
+@media (max-width: 1000px) {
+    .email-asunto {
+        flex-direction: column;
+        
+    }
+}
+
+@media (max-width: 550px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactanos {
+        gap: 20px;
+    }
 }

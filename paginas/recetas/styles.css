@@ -45,6 +45,39 @@ body {
     transform: rotate(20deg);
 }
 
+@media (max-width: 1200px) {
+    .header img {
+        scale: .8;
+    }
+}
+
+
+@media (max-width: 880px) {
+    .header img {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .conteiner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista-navegador {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .navegador {
+        width: auto;
+        height: auto;
+        top: 0;
+    }
+}
+
 /* ------------ NAV SECTION ------------- */
 
 .conteiner {
@@ -64,6 +97,7 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
     align-items: center;
+    z-index: 50;
 }
 
 .lista-navegador img{
@@ -96,6 +130,26 @@ body {
     background-color: #fff;
     filter: drop-shadow(0 0 10px #fff);
     transition: .5s;
+}
+
+@media (max-width: 800px) {
+    .conteiner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista-navegador {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .navegador {
+        width: auto;
+        height: auto;
+        top: 0;
+    }
 }
 
 /* -------------- MAIN SECTION ---------------- */
@@ -210,6 +264,7 @@ table {
     background-image: linear-gradient(to right, #000, #555);
     margin-top: 20px;
     transition:filter .2s ;
+    margin-bottom: 10px;
 }
 
 .pastel-secion button:hover {
@@ -241,6 +296,74 @@ table {
     top: -70px;
 }
 
+@media (max-width:1220px) {
+    .tabla {
+        display: flex;
+        flex-direction: column;
+    }
+    .principal .tabla img {
+        transform: scale(.8)
+    }
+    .texto {
+        max-width: 600px;
+    }
+    .tabla img:first-child {
+        right: 350px;
+    }
+    .tabla img:last-child {
+        right: -220px;
+
+    }
+
+    .principal .tabla img[src="imganes/naranja.png"] {
+        top: -10px;
+    }
+}
+
+@media (max-width:1150px) {
+    .principal .tabla img {
+        transform: scale(.7)
+    }
+
+    .principal .tabla img:last-child{
+        right: -180px;
+    }
+}
+
+@media (max-width:1000px) {
+    .pastel-secion {
+        flex-direction: column;
+    }
+    .principal .tabla img {
+        display: none;
+    }
+    .texto {
+        max-width: 450px;
+    }
+}
+
+@media (max-width:600px) {
+    .pastel-secion {
+        padding: 0;
+    }
+
+    .secion {
+        padding: 0;
+    }
+
+    table {
+        padding: 20px 0;
+    }
+
+    .secion th, .secion td {
+        padding: 10px 0;
+    }
+
+    .texto {
+        max-width: 350px;
+    }
+}
+
 /* ------------- FOOTER --------------- */
 
 footer {
@@ -260,9 +383,15 @@ form {
     text-align: left;
 }
 
+form > h2 {
+    max-width: 500px;
+    text-align: center;
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 50px;
 }
 
@@ -272,7 +401,7 @@ form {
 
 .formulario textarea {
     max-width: 450px;
-    min-width: 100%;
+    min-width: 250px;
     max-height: 150px;
     min-height: 30px;
 }
@@ -314,6 +443,7 @@ input::placeholder, textarea::placeholder {
 .email-asunto {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 form label {
@@ -337,7 +467,7 @@ footer img {
 }
 
 .redes {
-    width: 400px;
+    max-width: 350px;
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
@@ -347,4 +477,22 @@ footer img {
 
 .redes a:hover {
     filter: drop-shadow(0 0 10px #fff) ;
+}
+
+@media (max-width: 1000px) {
+    .email-asunto {
+        flex-direction: column;
+        
+    }
+}
+
+@media (max-width: 550px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactanos {
+        gap: 20px;
+    }
 }
