@@ -124,6 +124,10 @@ body {
         padding: 0;
     }
 
+    .lista-navegador li {
+        margin-bottom: 0;
+    }
+
     .navegador {
         width: auto;
         height: auto;
