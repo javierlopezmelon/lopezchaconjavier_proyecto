@@ -78,6 +78,7 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
     align-items: center;
+    z-index: 200;
 }
 
 .lista-navegador img{
