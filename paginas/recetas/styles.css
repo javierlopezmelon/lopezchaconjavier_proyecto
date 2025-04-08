@@ -156,6 +156,42 @@ body {
     }
 }
 
+@media (max-width: 500px) {
+    .lista-navegador {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+    }
+    
+    .lista-navegador a {
+        gap: 10px;
+    }
+    
+    .lista-navegador li {
+        margin-bottom: 0;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+    }
+    
+    .lista-navegador img {
+        width: 15px;
+    }
+    
+    .lista-navegador span {
+        font-size: 12px;
+    }
+    
+    .navegador {
+        width: auto;
+        height: auto;
+        top: 0;
+        gap: 5px;
+    }
+}
+
 /* -------------- MAIN SECTION ---------------- */
 
 .principal {
